@@ -1582,7 +1582,7 @@ public class FigureJ_Tool extends PlugInTool implements ImageListener,
 					if (WindowManager.getFrame("CP") == null)
 						colorP = new ColorPicker();
 					else
-						colorP = (ColorPicker) WindowManager.getFrame("CP");
+						colorP = (ColorPicker)(Window) WindowManager.getFrame("CP");
 					colorP.setVisible(true);
 					SeparatorPanel.setColor(0);
 					changeSeparatorColor = true;
